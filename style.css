@@ -7,7 +7,7 @@ body{
 
 
 .navbar-default {
-  background-color:#161a1d;
+  background:#161a1d !important;
 }
 
 .navbar-default .navbar-brand{
@@ -21,13 +21,13 @@ body{
 .introduction{
   padding-top:100px;
   min-height:350px;
-  text-align: justify; 
+  text-align: justify;
   font-size: 16px;
   /*background-color:#f0f5f5;
   border-color:#FFFFFF;*/
 }
 #img-about{
-  padding-bottom: 10px;  
+  padding-bottom: 10px;
 }
 #img-aline{
   border-radius:10%;
