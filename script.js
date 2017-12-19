@@ -1,5 +1,7 @@
-$(document).ready(function () {
-  $('.dropdown-menu').mouseleave(function () {
-    $('.myFakeClass').dropdown('toggle');
-  });
-});
+
+$(document).ready(function(){
+  $('.hamburger-wrap').on('click',function(){
+	  console.log("hey")
+    $('.ul-icon').toggleClass("navbar-open")
+  })
+})

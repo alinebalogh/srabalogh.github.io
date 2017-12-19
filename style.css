@@ -1,25 +1,21 @@
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
+}
 body{
-  margin-top:50px;
+  margin:0;
+  padding:0;
   background-color:#f0f5f5;
   font-family: 'Fira Sans', sans-serif;
   position: relative;
-}
-
-
-.navbar-default {
-  background:#161a1d !important;
-}
-
-.navbar-default .navbar-brand{
-  color: #FFFFFF;
-}
-
-.navbar-default .navbar-nav > li > a {
-  color: #FFFFFF;
+  overflow-x: hidden;
 }
 
 .introduction{
-  padding-top:100px;
+  margin-top: 50px;
+  padding-top:190px;
   min-height:350px;
   text-align: justify;
   font-size: 16px;
@@ -56,7 +52,7 @@ body{
 
 #port-row1,
 #port-row2{
-  padding-bottom: 20px;
+  padding-bottom: 220px;
 }
 #port-title{
   font-size: 50px;
@@ -106,6 +102,6 @@ body{
 }
 
 footer {
-    padding: 50px 0;
+    padding: 150px 0;
     background: rgba(192, 192, 192, 0.9);
 }

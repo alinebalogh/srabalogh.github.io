@@ -1,0 +1,98 @@
+
+.container{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 5px 5px 25px;
+  width: 100%;
+}
+.navbar{
+  background: #100F19;
+  font-family: 'Boogaloo', cursive;
+  margin:0;
+  padding:0;
+}
+.logo{
+   flex: 1;
+}
+.navbar ul{
+  flex: -1;
+  list-style: none;
+  padding:10px;
+  /*margin:auto;*/
+ 
+}
+.navbar li{
+  display: inline;
+  padding: 0 28px;
+}
+.navbar a{
+  text-decoration: none;
+}
+
+.t-icon:hover svg{
+  opacity: 0.5;
+  transition: all 500ms ease-out;
+}
+.icon-wrap{
+  position:relative;
+}
+
+.home:after{
+  content:"HOME";
+  display: block;
+  position: absolute;
+  margin-top:2px;
+  top: 16px;
+  left: 29px;
+  font-size: 11px;
+}
+.skills:after{
+  content:"SKILLS";
+  display: block;
+  position: absolute;
+  margin-top:2px;
+  top: 16px;
+  left: 27px;
+  font-size: 11px;
+}
+.portfolio:after{
+  content:"PORTFOLIO";
+  display: block;
+  position: absolute;
+  margin-top:2px;
+  top: 16px;
+  left: 18px;
+  font-size: 11px;
+}
+.contact:after{
+  content:"CONTACT ME";
+  display: block;
+  position: absolute;
+  margin-top:2px;
+  top: 14px;
+  left: 18px;
+  font-size: 11px;
+}
+.t-icon:after{
+  visibility: hidden;
+  color: #e3dbdb;
+  transition: all 300ms ease-in-out;
+}
+.t-icon:hover:after{
+  visibility: visible;
+  /*opacity: 0.9;  */
+}
+.hamburger-wrap{
+  cursor: pointer;
+  visibility: hidden;
+  padding:0 15px;
+}
+.hamburger{
+  width: 1.7em;
+  height:2px;
+  background: #e3dbdb;
+  margin: 4px;
+  
+}
+

@@ -1,54 +1,92 @@
 
 <html>
+
 <!-- Latest compiled and minified CSS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-<script src="script.js"></script>
 
 <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Boogaloo" rel="stylesheet">
+<script src="script.js"></script>
+<link rel="stylesheet" type="text/css" href="navbarMob.css" media="only screen and (max-width: 480px), only screen and (max-device-width: 480px)">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="navbar.css">
+<link rel="stylesheet" href="navbarMob.css" media="screen and (max-width: 480px), only screen and (max-device-width: 480px)">
 
 
 <body data-spy="scroll" data-target="#scroll-nav">
 
-
-  <nav class="navbar navbar-default navbar-fixed-top">
+  <nav class="navbar">
     <div class="container">
-
-      <div class="navbar-header">
-
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle Navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-
-        </button>
-
-        <a href="#" class="navbar-brand">Aline Balogh</a>
-
+      <a href="#" class="logo">
+        <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 34.07 30.54">
+          <g transform="translate(115.41 -117.53)" aria-label="Aline Balogh" font-weight="400" font-size="22.98" font-family="Segoe Print" letter-spacing="0" word-spacing="0" stroke-width=".57">
+            <path class ="stroke" d="M-102.93 147.07h-7.2c-2.37 0-4.28-1.72-4.28-3.86v-20.82c0-2.13 1.91-3.86 4.28-3.86h7.2M-93.82 118.53h7.2c2.37 0 4.28 1.73 4.28 3.86v20.82c0 2.14-1.91 3.86-4.28 3.86h-7.2" fill="none" stroke="#e3dbdb" stroke-width="1.69" stroke-linecap="round" stroke-linejoin="round" paint-order="markers fill stroke"/>
+            <path class ="animated" d="M-90.83 140.18c-2.31-1.48-2.9-4.3-7.26-5.02-3.5-.58-10.91.34-12.38-3.11" fill="none" stroke="#e3dbdb" stroke-width="1.57" stroke-linecap="round" stroke-linejoin="round"/>
+            <path class ="animated" style="-inkscape-font-specification:'Segoe Print'" d="M-97.3 124.18c-.23 0-.57.27-1 .83-.43.54-1.46 2.35-3.06 5.4a67.61 67.61 0 0 1-3.75 6.18l-1.65 2.46c-.27.4-.4.73-.4.97 0 .25.14.49.42.72.29.24.53.36.73.36.28 0 .54-.16.78-.46.23-.32.8-1.28 1.7-2.89.2-.35.37-.62.52-.85l1.35-2.24 2.04-3.85c.86-1.6 1.5-2.83 1.9-3.7.15.37.5 1.4 1.06 3.1.5 1.6.9 2.7 1.15 3.3l1.38 3.55c1.36 3.01 2.52 4.52 3.48 4.52.3 0 .57-.12.79-.35.22-.22.33-.5.33-.83a.8.8 0 0 0-.14-.48c-.1-.14-.32-.4-.7-.76a11.9 11.9 0 0 1-1.98-3.02 39.22 39.22 0 0 1-2.08-5.18c-.3-.87-.59-1.69-.89-2.45-.24-.57-.48-1.3-.73-2.18l-.14-.47c.07-.16.1-.4.1-.73 0-.31-.03-.5-.1-.55-.25-.27-.62-.4-1.11-.4z" fill="#e3dbdb"/>
+          </g>
+        </svg>
+      </a>
+      
+      <div class="hamburger-wrap">
+        <div class="hamburger"></div>
+        <div class="hamburger"></div>
+        <div class="hamburger"></div>
       </div>
-      <!-- navbar-header-->
-
-      <div class="navbar-collapse collapse" id="scroll-nav">
-
-        <ul class="nav navbar-nav navbar-right">
-          <li class="active"><a data-toggle="collapse" data-target=".navbar-collapse" href="#cont-about">About</a></li>
-          <li><a data-toggle="collapse" data-target=".navbar-collapse" href="#cont-portfolio">Portfolio</a></li>
-          <li data-toggle="collapse" data-target=".navbar-collapse" class="menu"><a href="#contact-container">Contact</a></li>
-<!--           <li class="dropdown-menu">shit</li> -->
-        </ul>
-      </div>
-
-      <!-- Lista menu navbar-->
+      
+      <ul class="ul-icon">
+        <li class="icon-wrap">
+          <a href="#" class='t-icon home'>
+            <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 39.82 35.62">
+              <g fill="none" stroke="#e3dbdb" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M29.96 14.38v20.1H9.86v-20.1" stroke-width="2.28" paint-order="markers fill stroke"/>
+                <path d="M1.47 15.38L19.91 1.46l18.44 13.92" stroke-width="2.91" paint-order="markers fill stroke"/>
+              </g>
+            </svg>
+          </a>
+        </li>
+        <li class="icon-wrap">
+          <a href="#" class='t-icon skills'>
+            <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 59.72 59.72">
+              <g stroke-linecap="round" stroke-linejoin="round" transform="translate(70.51 -130.37)">
+                <path d="M-22.35 151.86l6.92-13.93-2.97-2.9-13.88 6.9 9.93 9.93" opacity="1" fill="none" stroke="#e3dbdb" stroke-width="3.49" paint-order="markers fill stroke"/>
+                <path d="M-40.9 170.29l-17.76 18.24-10.3-10.29 17.84-17.74M-40.65 149.94l8.2-8.2 10.28 10.3-8.19 8.2" fill="none" stroke="#e3dbdb" stroke-width="3.12" paint-order="markers fill stroke"/>
+                <path d="M-22.35 151.86l6.92-13.93-2.97-2.9-13.88 6.9 9.93 9.93" opacity="1" fill="none" stroke="#e3dbdb" stroke-width="3.49" paint-order="markers fill stroke"/>
+                <path d="M-12.53 132.11l-5.87 2.92 2.97 2.9z" opacity="1" fill="#241c1c" stroke="#e3dbdb" stroke-width="3.49" paint-order="markers fill stroke"/>
+                <rect transform="rotate(-45)" rx="0" ry="0" y="65.69" x="-149.32" height="51.61" width="14.55" fill="none" stroke="#e3dbdb" stroke-width="3.12" paint-order="markers fill stroke"/>
+                <path d="M-49.02 141.93L-62.95 135l-2.9 2.98 6.9 13.87 9.93-9.93" opacity="1" fill="none" stroke="#e3dbdb" stroke-width="3.49" paint-order="markers fill stroke"/>
+                <path d="M-49.02 141.93L-62.95 135l-2.9 2.98 6.9 13.87 9.93-9.93" opacity="1" fill="none" stroke="#e3dbdb" stroke-width="3.49" paint-order="markers fill stroke"/>
+                <path d="M-68.77 132.11l2.92 5.88 2.9-2.98z" opacity="1" fill="#241c1c" stroke="#e3dbdb" stroke-width="3.49" paint-order="markers fill stroke"/>
+              </g>
+            </svg>
+          </a>
+        </li>
+        <li class="icon-wrap">
+          <a href="#" class='t-icon portfolio'>
+            <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 47.86 41.61">
+            <g fill="none" stroke="#e3dbdb" stroke-linejoin="round">
+              <path d="M26.91 13.05a2.98 2.98 0 0 1-2.98 2.98 2.98 2.98 0 0 1-2.99-2.98" opacity="1" stroke-width="1.55" paint-order="markers fill stroke"/>
+              <path d="M12.3 12.85A11.63 11.63 0 0 1 23.93 1.22a11.63 11.63 0 0 1 11.63 11.63m-34.34-.53h45.42V40.4H1.22z" opacity="1" stroke-width="2.44" paint-order="markers fill stroke"/>
+            </g>
+          </svg>
+          </a>
+        </li>
+        <li class="icon-wrap">
+          <a href="#" class='t-icon contact'>
+            <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 39.84 37.5">
+              <g fill="none" stroke="#e3dbdb" stroke-width="1.55" stroke-linejoin="round">
+                <path d="M25.78 36.72a12.11 12.11 0 0 1-11.72-12.49 12.11 12.11 0 0 1 12.49-11.72 12.11 12.11 0 0 1 11.72 12.48 12.11 12.11 0 0 1-3 7.6l3.8 3.78-7.35-1a12.11 12.11 0 0 1-5.94 1.35z" opacity="1" paint-order="markers fill stroke"/>
+                <path d="M25.79 12.84a12.11 12.11 0 0 0 0-.33A12.11 12.11 0 0 0 13.28.78 12.11 12.11 0 0 0 1.58 13.27a12.11 12.11 0 0 0 3 7.6l-3.8 3.77 7.35-1A12.11 12.11 0 0 1 13.7 25" opacity="1" paint-order="markers fill stroke"/>
+              </g>
+            </svg>
+          </a>
+        </li>
+      </ul>
     </div>
-
-    <!-- div container nav--->
   </nav>
-  <!-- nav header -->
 
   <!-- =======Beginning Section About============== -->
 
