@@ -7,20 +7,22 @@
   width: 100%;
 }
 .navbar{
-  background: #100F19;
+  /*background: #100F19;*/
   font-family: 'Boogaloo', cursive;
-  margin:0;
-  padding:0;
+  margin-bottom: 0;
+  border-radius:0;
+
 }
 .logo{
    flex: 1;
+   z-index: 10;
 }
 .navbar ul{
   flex: -1;
   list-style: none;
   padding:10px;
-  /*margin:auto;*/
- 
+  margin:auto;
+
 }
 .navbar li{
   display: inline;
@@ -87,12 +89,15 @@
   cursor: pointer;
   visibility: hidden;
   padding:0 15px;
+  z-index:10;
+
 }
 .hamburger{
   width: 1.7em;
   height:2px;
   background: #e3dbdb;
   margin: 4px;
-  
 }
-
+.ul-icon{
+  z-index:10;
+}
