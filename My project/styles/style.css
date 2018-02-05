@@ -1,0 +1,143 @@
+:root{
+  --tile-gd-width: 655px;
+  --tile-md-width: 430px;
+  --tile-sm-width: 322px;
+  --tile-md-height: 251px;
+  --font-mob-g: 2rem;
+  --font-mob-m: 1.2rem;
+  --font-mob-s: 1rem;
+}
+@media screen and (max-width: 1024px){
+  :root{
+    --tile-gd-width: 510px;
+    --tile-md-width: 390px;
+    --tile-sm-width: 250px;
+    --tile-md-height: 220px;
+    --tile-gd-height: 410px;
+  }
+}
+@media screen and (max-width: 780px){
+  :root{
+    --tile-gd-width: 410px;
+    --tile-md-width: 290px;
+    --tile-sm-width: 200px;
+    --tile-md-height: 170px;
+    --tile-gd-height: 310px;
+  }
+}
+@media screen and (max-width: 480px){
+  :root{
+    --tile-gd-width: 355px;
+    --tile-md-width: 175px;
+    --tile-sm-width: 175px;
+    --tile-md-height: 100px;
+    --tile-gd-height: 210px;
+  }
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+
+}
+body{
+  margin:0;
+  padding:0;
+  /*  background-color:#f0f5f5; */
+  font-family: 'Boogaloo', cursive;
+  color: #FFFFF0;
+  /*font-family: 'Fira Sans', sans-serif;*/
+  position: relative;
+  overflow-x: hidden;
+}
+.cor-port{
+  background: linear-gradient(to bottom, #669999 -5%, #660033 101%);
+  padding-bottom: 30px;
+}
+.title-sec{
+  font-size: 2.6rem;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.sub-text{
+  font-size: 1.4em;
+  font-family: 'Fira Sans';
+
+}
+@media screen and (max-width: 480px){
+  .title-sec{
+    font-size: var(--font-mob-g);
+  }
+  .sub-text{
+    font-size: var(--font-mob-s);
+  }
+}
+
+
+#port-title,
+#contact-title,
+#followme-title{
+  padding:10px;
+  font-size: 2.8rem;
+}
+
+#port-img{
+    padding: 25px 10px 20px 10px;
+    max-width: 100%;
+    height: auto;
+}
+
+#port-row1,
+#port-row2{
+  padding-bottom: 220px;
+}
+#port-title{
+  padding: 20px 20px;
+  color:#d6d4e0;
+}
+
+#contact-container{
+  padding:20px;
+  background: #11121A;
+}
+/* Style all font awesome icons */
+
+/* Add a hover effect if you want */
+
+#social-media{
+  padding-top:40px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+    text-decoration: none;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-github {
+    background: #FFFFFF;
+    border-color: black;
+    color: black;
+}
+
+.footer{
+    /* padding: 2px; */
+    background-color: #FFF;
+    /* opacity: 0.6; */
+    height: auto;
+}
