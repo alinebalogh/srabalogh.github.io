@@ -53,17 +53,18 @@
   animation-timing-function: ease-in-out;
   animation: type 5000ms steps(60, end);
 }
-.text:before{
+/*.text:before{
   content: "";
   display:block;
   width: 70%;
   margin: 0 auto;
-  box-shadow: 0 90px 0 1px #E8E1E1,
-              2px 91px 2px 1px rgba(0, 0, 0, 0.6 ),
-              2px 92px 7px 1px rgba(0, 0, 0, 0.1 ),
-              2px 93px 17px 1px rgba(0, 0, 0, 0.1 );
-  /* box-shadow: 0 85px 0 2.5px #E8E1E1; */
-}
+  box-shadow: 0 70px 0 1px #E8E1E1,
+              2px 71px 2px 1px rgba(0, 0, 0, 0.6 ),
+              2px 72px 7px 1px rgba(0, 0, 0, 0.1 ),
+              2px 73px 17px 1px rgba(0, 0, 0, 0.1 );
+  /* box-shadow: 0 85px 0 2.5px #E8E1E1; 
+}*/
+
 @media screen and (max-width: 480px){
   .text{
     font-size: var(--font-mob-g);
