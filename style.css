@@ -1,47 +1,86 @@
+:root{
+  --tile-gd-width: 655px;
+  --tile-md-width: 430px;
+  --tile-sm-width: 322px;
+  --tile-md-height: 251px;
+  --font-mob-g: 2rem;
+  --font-mob-m: 1.2rem;
+  --font-mob-s: 1rem;
+}
+@media screen and (max-width: 1024px){
+  :root{
+    --tile-gd-width: 510px;
+    --tile-md-width: 390px;
+    --tile-sm-width: 250px;
+    --tile-md-height: 220px;
+    --tile-gd-height: 410px;
+  }
+}
+@media screen and (max-width: 780px){
+  :root{
+    --tile-gd-width: 410px;
+    --tile-md-width: 290px;
+    --tile-sm-width: 200px;
+    --tile-md-height: 170px;
+    --tile-gd-height: 310px;
+  }
+}
+@media screen and (max-width: 480px){
+  :root{
+    --tile-gd-width: 355px;
+    --tile-md-width: 175px;
+    --tile-sm-width: 175px;
+    --tile-md-height: 100px;
+    --tile-gd-height: 210px;
+  }
+}
 *, *:before, *:after {
   box-sizing: inherit;
 }
 html {
   box-sizing: border-box;
+  font-size: 16px;
+
 }
 body{
   margin:0;
   padding:0;
-  background-color:#f0f5f5;
-  font-family: 'Fira Sans', sans-serif;
+  /*  background-color:#f0f5f5; */
+  font-family: 'Boogaloo', cursive;
+  color: #FFFFF0;
+  /*font-family: 'Fira Sans', sans-serif;*/
   position: relative;
   overflow-x: hidden;
-}
-
-.introduction{
-  margin-top: 50px;
-  padding-top:190px;
-  min-height:350px;
-  text-align: justify;
-  font-size: 16px;
-  /*background-color:#f0f5f5;
-  border-color:#FFFFFF;*/
-}
-#img-about{
-  padding-bottom: 10px;
-}
-#img-aline{
-  border-radius:10%;
-}
-#desc-port{
-  color: #505050 ;
 }
 .cor-port{
   background: linear-gradient(to bottom, #669999 -5%, #660033 101%);
   padding-bottom: 30px;
 }
+.title-sec{
+  font-size: 2.6rem;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.sub-text{
+  font-size: 1.4em;
+  font-family: 'Fira Sans';
+
+}
+@media screen and (max-width: 480px){
+  .title-sec{
+    font-size: var(--font-mob-g);
+  }
+  .sub-text{
+    font-size: var(--font-mob-s);
+  }
+}
+
 
 #port-title,
-#about-title,
 #contact-title,
 #followme-title{
   padding:10px;
-  font-size: 36px;
+  font-size: 2.8rem;
 }
 
 #port-img{
@@ -55,13 +94,13 @@ body{
   padding-bottom: 220px;
 }
 #port-title{
-  font-size: 50px;
   padding: 20px 20px;
   color:#d6d4e0;
 }
 
 #contact-container{
   padding:20px;
+  background: #11121A;
 }
 /* Style all font awesome icons */
 
@@ -96,12 +135,9 @@ body{
     color: black;
 }
 
-.footer p {
-	font-weight: 300;
-	position: relative;
-}
-
-footer {
-    padding: 150px 0;
-    background: rgba(192, 192, 192, 0.9);
+.footer{
+    /* padding: 2px; */
+    background-color: #FFF;
+    /* opacity: 0.6; */
+    height: auto;
 }

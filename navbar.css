@@ -1,5 +1,5 @@
 
-.container{
+.wrap-cont{
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -8,14 +8,21 @@
 }
 .navbar{
   /*background: #100F19;*/
+  position: fixed;
+  top:0;
+  right: 0;
+  left: 0;
   font-family: 'Boogaloo', cursive;
   margin-bottom: 0;
   border-radius:0;
-
+  z-index: 100;
+}
+.navbar-on{
+  background: rgba(16, 15, 25, 0.51);
 }
 .logo{
-   flex: 1;
-   z-index: 10;
+   flex: 10;
+   /* z-index: 100; */
 }
 .navbar ul{
   flex: -1;
@@ -89,7 +96,7 @@
   cursor: pointer;
   visibility: hidden;
   padding:0 15px;
-  z-index:10;
+  /* z-index:10; */
 
 }
 .hamburger{
@@ -99,5 +106,28 @@
   margin: 4px;
 }
 .ul-icon{
-  z-index:10;
+  /* z-index:10; */
+}
+/*Logo style*/
+
+.stroke{
+  stroke-dasharray: 38;
+  stroke-dashoffset: 50;
+  animation: dash 3000ms;
+  -webkit-transition: stroke-dashoffset 3000ms;
+}
+.logo:hover svg{
+  stroke-opacity: 0.9;
+  fill-opacity: 0.9;
+}
+svg:hover .stroke{
+  /*stroke: #483737;*/
+/*   stroke-dasharray: 150; */
+  stroke-dashoffset: 16;
+  transition: all ease-in-out 3000ms;
+}
+@keyframes dash {
+  to {
+    stroke-dashoffset: 124;
+  }
 }

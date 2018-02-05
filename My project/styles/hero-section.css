@@ -1,0 +1,83 @@
+.wrap-hero{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.hero-image{
+  /* margin-top:-70px; */
+  background-color: rgba(36, 28, 28, 0.51);
+  background-image: url("../images/IMG_9654-min.jpg");
+  height: 100vh;
+  width:100%;
+  background-position: 50% 75%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-blend-mode: multiply;
+  position: relative;
+  z-index:-1;
+}
+@media screen and (max-width: 480px){
+  .hero-image{
+    background-attachment: scroll;
+    background-position: 45% 50%;
+  }
+}
+.text{
+  font-family: 'Boogaloo', cursive;
+  text-align: center;
+  color: #e3dbdb;
+  font-size: 58px;
+  z-index: 10;
+  /*margin: 5px;*/
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.4),
+               0 4px 14px rgba(0, 0, 0, 0.1),
+               0 0 24px rgba(0, 0, 0, 0.1);
+}
+.text p{
+  padding: 0;
+  margin:15px;
+}
+.text::after{
+  display: block;
+  content: "I'm a front-end developer living in S\00e3o Paulo, Brazil.";
+  /*margin: 5px 0 ;*/
+  padding: 0;
+  margin:0;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 36px;
+  width: 100%;
+  animation-timing-function: ease-in-out;
+  animation: type 5000ms steps(60, end);
+}
+.text:before{
+  content: "";
+  display:block;
+  width: 70%;
+  margin: 0 auto;
+  box-shadow: 0 90px 0 1px #E8E1E1,
+              2px 91px 2px 1px rgba(0, 0, 0, 0.6 ),
+              2px 92px 7px 1px rgba(0, 0, 0, 0.1 ),
+              2px 93px 17px 1px rgba(0, 0, 0, 0.1 );
+  /* box-shadow: 0 85px 0 2.5px #E8E1E1; */
+}
+@media screen and (max-width: 480px){
+  .text{
+    font-size: var(--font-mob-g);
+  }
+  .text::after{
+    font-size: var(--font-mob-m);
+  }
+  .text::before{
+    box-shadow: 0 45px 0 2.5px #E8E1E1;
+  }
+}
+
+/* Animations */
+
+@keyframes type{
+  from { width: 0;}
+}

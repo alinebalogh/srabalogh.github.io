@@ -1,0 +1,38 @@
+@media screen and (max-width: 480px) {
+  .logo svg{
+    width: 35px;
+    height:35px;
+  }
+  .t-icon svg{
+    width: 23px;
+    height: 23px;
+  }
+ .t-icon:after{
+	  top: 21px;
+    padding-bottom: 5px;
+  }
+  .ul-icon{
+    position: absolute;
+    top:100%;
+    right: 0%;
+    left: -0.05%;
+    width: 0;
+    height: 55px;
+    background: #201B21;
+    opacity: 0;
+    filter: alpha(opacity=90); /* For IE8 and earlier */
+    display: flex;
+    justify-content: center;
+    visibility: hidden;
+    transition: all 400ms ease-in-out;
+  }
+  .hamburger-wrap{
+    visibility:visible;
+  }
+
+}
+.navbar-open{
+  width: 100.1vw;
+  visibility:visible;
+  opacity: 0.6;
+}
