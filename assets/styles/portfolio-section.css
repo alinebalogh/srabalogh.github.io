@@ -21,22 +21,22 @@
 }
 /*Background image thumbnails*/
 .calculator{
-  background: url('https://github.com/srabalogh/srabalogh.github.io/blob/master/images/calculator_web.png?raw=true');
+  background: url('../images/calculator_web.png');
 }
 .simon{
   background: url('https://s3-us-west-2.amazonaws.com/i.cdpn.io/1344730.aEoEYp.8b9101f6-d316-41d0-a537-c84290ea779a.png');
 }
 .tictactoe{
-  background: url('https://github.com/srabalogh/srabalogh.github.io/blob/master/images/tictactoe_web.png?raw=true');
+  background: url('../images/tictactoe_web.png');
 }
 .wikipedia{
-  background: url('https://github.com/srabalogh/srabalogh.github.io/blob/master/images/Wikipedia_web.png?raw=true');
+  background: url('../images/Wikipedia_web.png');
 }
 .twitchtv{
-  background: url('https://github.com/srabalogh/srabalogh.github.io/blob/master/images/twitchtv_web.png?raw=true');
+  background: url('../images/twitchtv_web.png');
 }
 .weather{
-  background: url('https://github.com/srabalogh/srabalogh.github.io/blob/master/images/weatherApp_web.png?raw=true');
+  background: url('../images/weatherApp_web.png');
 }
 .bear{
   background: url('https://s3-us-west-2.amazonaws.com/i.cdpn.io/1344730.qPvgxv.60b76700-6cbf-41d6-ac8c-a3d0edf4af48.png');
