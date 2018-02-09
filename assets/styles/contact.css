@@ -93,6 +93,9 @@
     width: 100vw;
     opacity: 1;
   }
+  .contact-form div{
+    padding: 10px 25px 10px 10px;
+  }
   #btn-contact{
 
     width: 200px;
