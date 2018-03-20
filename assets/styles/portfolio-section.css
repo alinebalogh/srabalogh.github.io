@@ -21,7 +21,7 @@
   background: url('../images/calculator_web.png');
 }
 .simon{
-  background: url('https://s3-us-west-2.amazonaws.com/i.cdpn.io/1344730.aEoEYp.8b9101f6-d316-41d0-a537-c84290ea779a.png');
+  background: url('../images/Simon_Game_web.png');
 }
 .tictactoe{
   background: url('../images/tictactoe_web.png');
@@ -36,7 +36,7 @@
   background: url('../images/weatherApp_web.png');
 }
 .bear{
-  background: url('https://s3-us-west-2.amazonaws.com/i.cdpn.io/1344730.qPvgxv.60b76700-6cbf-41d6-ac8c-a3d0edf4af48.png');
+  background: url('../images/Grid_Gallery.jpg');
 }
 .thumb{
   width: var(--tile-md-width);
